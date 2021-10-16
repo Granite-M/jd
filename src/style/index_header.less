@@ -1,0 +1,263 @@
+header {
+  border-bottom: solid 2px #e4e4e4;
+  background-color: #fff;
+  //头部导航
+  > .top {
+    width: 100%;
+
+    padding: 0 10%;
+
+    height: 30px;
+    background-color: #e3e4e5;
+    line-height: 30px;
+    > .left {
+      float: left;
+      position: relative;
+      cursor: pointer;
+      > span {
+        color: red;
+      }
+      &:hover {
+        color: red;
+        > div {
+          display: block;
+        }
+      }
+      > div {
+        display: none;
+        position: absolute;
+        width: 3rem;
+        height: 4.42rem;
+        border: 1px solid #999;
+        box-shadow: 3px 3px 3px #333;
+        background-color: white;
+        z-index: 10;
+        > span {
+          display: inline-block;
+          width: 15%;
+          color: #999;
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+    > .right {
+      width: auto;
+      float: right;
+      > ul {
+        list-style: none;
+        display: flex;
+
+        height: 30px;
+        justify-content: space-around;
+        font-size: 0.12rem;
+        > li {
+          text-align: center;
+          margin: 0 0.1rem;
+          box-sizing: border-box;
+          color: #999;
+          cursor: pointer;
+
+          font-size: 0.12rem;
+          > span {
+            color: #999;
+            margin: 0 0.05rem;
+          }
+          &:hover {
+            color: red;
+          }
+        }
+        > li:nth-of-type(1) {
+          > a {
+            text-decoration: none;
+            color: #999;
+            &:hover {
+              color: red;
+            }
+          }
+        }
+        > li:nth-of-type(2) {
+          > a {
+            color: red;
+          }
+        }
+        > li:nth-of-type(4) {
+          position: relative;
+
+          z-index: 10;
+          &:hover {
+            > div {
+              display: block;
+            }
+          }
+          > div {
+            display: none;
+            color: #999;
+            position: absolute;
+            background-color: white;
+            width: 2.8rem;
+            height: 1.61rem;
+            border: 1px solid #999;
+            box-shadow: 3px 3px 3px #333;
+            > div {
+              display: flex;
+
+              flex-wrap: wrap;
+              > span {
+                margin-left: 30px;
+                display: inline-block;
+                width: 1rem;
+                height: 0.24rem;
+                line-height: 0.24rem;
+                &:hover {
+                  color: red;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  > .warpper {
+    width: 1200px;
+
+    margin: 0 auto;
+
+    // background-color: yellow;
+
+    .main {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 10%;
+      display: flex;
+
+      > .logo {
+        flex-shrink: 0;
+        margin: 0.1rem;
+        width: 1.9rem;
+        height: 1.2rem;
+        overflow: hidden;
+        position: relative;
+
+        > img {
+          width: 1.9rem;
+          position: absolute;
+          left: -0.2rem;
+        }
+      }
+      //中间搜索框
+      > .mid {
+        > div:nth-of-type(1) {
+          margin-top: 30px;
+          display: inline-block;
+          position: relative;
+          width: 4.25rem;
+          height: 0.32rem;
+          > input {
+            margin-left: 0.6rem;
+            width: 5rem;
+            height: 0.32rem;
+            outline: none;
+            border: red 2px solid;
+          }
+          > span {
+            position: absolute;
+            top: 0.1rem;
+            right: -0.7rem;
+            color: #e4e4e4;
+          }
+
+          > button {
+            width: 0.58rem;
+            height: 0.32rem;
+            position: absolute;
+            top: 0;
+            right: -1.4rem;
+            > span {
+              color: red;
+            }
+          }
+        }
+        >a{
+          text-decoration: none ;
+          color: red;
+          > button {
+            outline: none;
+            width: 1.3rem;
+            height: 0.34rem;
+            margin-left: 1.5rem;
+            color: #c81623;
+            position: relative;
+            font-size: 0.12rem;
+            > span:nth-of-type(1) {
+              position: absolute;
+              font-size: 00.12rem;
+              top: 0.05rem;
+              left: 30px;
+              border-radius: 00.06rem;
+              background-color: #c81623;
+              color: white;
+              text-align: center;
+              line-height: 0.12rem;
+              height: 00.12rem;
+            }
+            &:hover{
+              border: red solid 1px ;
+            }
+            
+          }
+
+        }
+        > div:nth-of-type(2) {
+          > ul {
+            margin-top: 0.1rem;
+            margin-left: 0.6rem;
+            width: 5.5rem;
+            height: 0.2rem;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            > li {
+              text-align: center;
+              flex: 1;
+              font-size: 0.12rem;
+              color: #999;
+              &:hover {
+                color: red;
+              }
+            }
+          }
+        }
+        > div:nth-of-type(3) {
+          > ul {
+            width: 7rem;
+            height: 0.2rem;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            > li {
+              text-align: center;
+              flex: 1;
+              font-size: 0.15rem;
+              color: #333;
+              &:hover {
+                color: red;
+              }
+              margin: 0 auto;
+            }
+            > li:nth-of-type(1) {
+              font-weight: 800;
+              color: #c81623;
+            }
+            > li:nth-of-type(2) {
+              font-weight: 800;
+              color: #c81623;
+            }
+          }
+        }
+      }
+    }
+  }
+}

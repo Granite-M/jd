@@ -1,0 +1,48 @@
+@charset "utf-8";
+html {
+  font-size: 100px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clearfix {
+  *zoom: 1;
+  &:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  li {
+    list-style: none;
+  }
+}
+button {
+  cursor: pointer;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+  background-color: #f4f4f4;
+}
+@import url(index_header.less);
+@import url(index_banner.less);
+@import url(index_main.less);
+@import url(index_footer.less);
+ 
